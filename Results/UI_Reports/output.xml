@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.7.4 on win32)" generated="20230620 15:50:21.001" rpa="false" schemaversion="4">
+<suite id="s1" name="Mjunction Export e-Market place" source="E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place">
+<suite id="s1-s1" name="Keyword Testcases" source="E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keyword_Testcases">
+<suite id="s1-s1-s1" name="Web" source="E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keyword_Testcases\Web">
+<suite id="s1-s1-s1-s1" name="Login" source="E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keyword_Testcases\Web\Login.robot">
+<test id="s1-s1-s1-s1-t1" name="TC_01 Login as Seller" line="8">
+<kw name="Comment" library="BuiltIn">
+<arg>Login to the Login to Export E-MarketPlace application</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:23.365" endtime="20230620 15:50:23.366"/>
+</kw>
+<kw name="Validate user login" library="common">
+<kw name="Comment" library="BuiltIn">
+<arg>To launch the browser and navigate to the url</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:23.368" endtime="20230620 15:50:23.368"/>
+</kw>
+<kw name="Launch Browser and navigate to URL" library="common">
+<arg>${EEMP_URL}</arg>
+<arg>${BROWSERNAME}</arg>
+<kw name="Comment" library="BuiltIn">
+<arg>To launch the browser</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:23.371" endtime="20230620 15:50:23.371"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${EEMP_URL}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230620 15:50:23.374" level="INFO">Opening browser 'chrome' to base url 'https://exportmarket-uat.mjunction.in/'.</msg>
+<status status="PASS" starttime="20230620 15:50:23.373" endtime="20230620 15:50:36.674"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>To Maximize the browser window</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:36.675" endtime="20230620 15:50:36.676"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230620 15:50:36.678" endtime="20230620 15:50:37.170"/>
+</kw>
+<status status="PASS" starttime="20230620 15:50:23.369" endtime="20230620 15:50:37.171"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>To validate Email</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:37.172" endtime="20230620 15:50:37.173"/>
+</kw>
+<kw name="Validate Email" library="common">
+<kw name="Comment" library="BuiltIn">
+<arg>To click on login as seller</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:37.178" endtime="20230620 15:50:37.179"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230620 15:50:39.183" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230620 15:50:37.180" endtime="20230620 15:50:39.183"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button.loginasseller}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230620 15:50:39.186" level="INFO">Clicking element '//button[contains(text(),'Login As Seller')]'.</msg>
+<status status="PASS" starttime="20230620 15:50:39.185" endtime="20230620 15:50:39.597"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>To enter Email id</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:39.598" endtime="20230620 15:50:39.599"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230620 15:50:41.611" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230620 15:50:39.600" endtime="20230620 15:50:41.612"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textbox.email.text}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230620 15:50:41.614" level="INFO">Typing text 'fefafeittoutru-5075@yopmail.com' into text field '//*[@id="Email Address/Phone Number"]'.</msg>
+<status status="PASS" starttime="20230620 15:50:41.613" endtime="20230620 15:50:42.150"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>To click on Get OTP</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:42.152" endtime="20230620 15:50:42.153"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button.getotp}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230620 15:50:42.155" level="INFO">Clicking button '//button[contains(text(),'Get OTP')]'.</msg>
+<status status="PASS" starttime="20230620 15:50:42.154" endtime="20230620 15:50:42.337"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>To enter OTP</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:42.338" endtime="20230620 15:50:42.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230620 15:50:44.347" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230620 15:50:42.340" endtime="20230620 15:50:44.348"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${OTP}'!='None'</arg>
+<arg>SeleniumLibrary.Input Text</arg>
+<arg>${textbox.otp1.text}</arg>
+<arg>${OTP}</arg>
+<arg>ELSE</arg>
+<arg>Click Element</arg>
+<arg>${textbox.otp1.text}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${textbox.otp1.text}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230620 15:50:44.354" level="INFO">Clicking element '//input[@data-testid='otp'][1]'.</msg>
+<status status="PASS" starttime="20230620 15:50:44.352" endtime="20230620 15:50:44.450"/>
+</kw>
+<status status="PASS" starttime="20230620 15:50:44.349" endtime="20230620 15:50:44.451"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>Enter OTP</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:50:44.451" endtime="20230620 15:50:44.451"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${OTP}'=='None'</arg>
+<arg>Wait Until Time</arg>
+<arg>60</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Wait Until Time" library="CustomLibrary">
+<arg>60</arg>
+<status status="PASS" starttime="20230620 15:50:44.454" endtime="20230620 15:51:44.458"/>
+</kw>
+<status status="PASS" starttime="20230620 15:50:44.452" endtime="20230620 15:51:44.466"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button.loginbtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230620 15:51:44.478" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20230620 15:51:44.475" endtime="20230620 15:51:44.763"/>
+</kw>
+<kw name="Wait Until Time" library="CustomLibrary">
+<arg>5</arg>
+<status status="PASS" starttime="20230620 15:51:44.764" endtime="20230620 15:51:49.770"/>
+</kw>
+<status status="PASS" starttime="20230620 15:50:37.176" endtime="20230620 15:51:49.770"/>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<arg>To close browser</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" starttime="20230620 15:51:49.771" endtime="20230620 15:51:49.771"/>
+</kw>
+<kw name="Close application" library="common">
+<kw name="Wait Until Time" library="CustomLibrary">
+<arg>2</arg>
+<status status="PASS" starttime="20230620 15:51:49.772" endtime="20230620 15:51:51.789"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230620 15:51:51.789" endtime="20230620 15:51:54.217"/>
+</kw>
+<status status="PASS" starttime="20230620 15:51:49.772" endtime="20230620 15:51:54.218"/>
+</kw>
+<status status="PASS" starttime="20230620 15:50:23.366" endtime="20230620 15:51:54.218"/>
+</kw>
+<status status="PASS" starttime="20230620 15:50:23.364" endtime="20230620 15:51:54.219"/>
+</test>
+<status status="PASS" starttime="20230620 15:50:21.328" endtime="20230620 15:51:54.220"/>
+</suite>
+<status status="PASS" starttime="20230620 15:50:21.077" endtime="20230620 15:51:54.224"/>
+</suite>
+<status status="PASS" starttime="20230620 15:50:21.074" endtime="20230620 15:51:54.230"/>
+</suite>
+<status status="PASS" starttime="20230620 15:50:21.031" endtime="20230620 15:51:54.233"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Mjunction Export e-Market place">Mjunction Export e-Market place</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Keyword Testcases">Mjunction Export e-Market place.Keyword Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Web">Mjunction Export e-Market place.Keyword Testcases.Web</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Login">Mjunction Export e-Market place.Keyword Testcases.Web.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230620 15:50:22.586" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\common.robot' on line 31: Creating keyword 'Select Dropdown values' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230620 15:50:23.330" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\User_define_keywords.robot' on line 50: Creating keyword 'Validate the GST certificate' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230620 15:50:23.330" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\User_define_keywords.robot' on line 52: Creating keyword 'Validate the Factory address' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230620 15:50:23.330" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\User_define_keywords.robot' on line 54: Creating keyword 'Validate Contact information' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230620 15:50:23.331" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\User_define_keywords.robot' on line 56: Creating keyword 'Validate fashion and home textile category' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230620 15:50:23.331" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\User_define_keywords.robot' on line 58: Creating keyword 'Validate Terms and Condition' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20230620 15:50:23.331" level="ERROR">Error in file 'E:\Shital Git\exportemarket-auto-tests\Mjunction_Export_e-Market_place\Keywords\Web\User_define_keywords.robot' on line 60: Creating keyword 'Validate industrial goods category' failed: User keyword cannot be empty.</msg>
+</errors>
+</robot>
