@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.0 on win32)" generated="20240118 19:13:01.071" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Naidu.Govinda Rao\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Launch Browser">
+<arg>${BROWSERNAME}</arg>
+<arg>${MJOPS_URL}</arg>
+<msg timestamp="20240118 19:13:02.668" level="FAIL">No keyword with name 'Launch Browser' found.</msg>
+<status status="FAIL" starttime="20240118 19:13:02.667" endtime="20240118 19:13:02.668"/>
+</kw>
+<kw name="Login To The MJ OPS Module">
+<arg>${test_data}[User]</arg>
+<status status="NOT RUN" starttime="20240118 19:13:02.672" endtime="20240118 19:13:02.673"/>
+</kw>
+<kw name="Navigate To The Menu">
+<arg>${test_data}[Category]</arg>
+<arg>${test_data}[Subcategory]</arg>
+<status status="NOT RUN" starttime="20240118 19:13:02.677" endtime="20240118 19:13:02.677"/>
+</kw>
+<kw name="Navigate To User Profile">
+<arg>${test_data}[Info Page]</arg>
+<arg>${test_data}[Term]</arg>
+<arg>Buyers</arg>
+<status status="NOT RUN" starttime="20240118 19:13:02.684" endtime="20240118 19:13:02.685"/>
+</kw>
+<kw name="Validate Approving The User">
+<arg>${test_data}[Button]</arg>
+<arg>${test_data}[Label]</arg>
+<arg>${test_data}[Rate1]</arg>
+<arg>${test_data}[Rate2]</arg>
+<arg>${test_data}[Rate3]</arg>
+<arg>${test_data}[Rate4]</arg>
+<arg>${test_data}[Rate5]</arg>
+<arg>${test_data}[Rate6]</arg>
+<status status="NOT RUN" starttime="20240118 19:13:02.688" endtime="20240118 19:13:02.688"/>
+</kw>
+<status status="PASS" starttime="20240118 19:13:01.131" endtime="20240118 19:13:06.290"/>
+</kw>
+<status status="PASS" starttime="20240118 19:13:01.130" endtime="20240118 19:13:06.290"/>
+</test>
+<status status="PASS" starttime="20240118 19:13:01.075" endtime="20240118 19:13:06.293"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
