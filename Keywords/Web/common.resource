@@ -56,7 +56,7 @@ Validate Seller Email
 Buyer Login To The Application
     [Arguments]    ${Email}
     Comment    Launch the browser and navigate to the url
-    Launch Browser And Navigate To The URL    ${EEMP_URL}    Login    Buyer
+    Launch Browser And Navigate To The URL    ${RIVEXA_URL}    Login    Buyer
     Comment    Validate Seller Email
     Validate Buyer Email    ${Email}
     Comment    Validate OTP Email

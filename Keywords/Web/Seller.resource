@@ -39,7 +39,7 @@ Update The Certificate Data In Seller Profile
     SeleniumLibrary.Wait Until Element Is Visible    //div[text()="Edit Factory details"]    ${Short_Wait}    Edit Factory Details Page is not visible after waiting ${Short_Wait}
     Click And Select Dropdown    //div[text()="Select Certificate"]    SEDEX
     Comment    Click And Select Label    //div[text()="Select Certificate"]    SEDEX
-    Upload Document File    ${EXECDIR}\\ImportFiles\\GST.pdf    SAVE & PROCEED
+    Upload Document File    //div[text()="Upload File"]    ${EXECDIR}\\ImportFiles\\GST.pdf    SAVE & PROCEED
     Wait Until Element Clickable And Click    //button[@aria-label="Choose date"]
     Comment    SeleniumLibrary.Wait Until Element Is Visible    //input[@placeholder="MM/DD/YYYY"]    ${MEDIUM_WAIT}    Calendar icon is not displayed after waiting ${MEDIUM_WAIT} seconds
     Comment    Click Element    //input[@placeholder="MM/DD/YYYY"]

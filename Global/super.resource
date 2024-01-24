@@ -12,7 +12,7 @@ Resource          ../Keywords/Web/Buyer.resource
 Resource          ../Keywords/Web/Seller.resource
 Resource          ../Object_Repository/Web/textbox.resource
 Resource          ../Object_Repository/Web/buttons.resource
-Resource          ../Object_Repository/Web/lableabel.resource
+Resource          ../Object_Repository/Web/label.resource
 Resource          ../Object_Repository/Web/dropdown.resource
 Resource          ../Object_Repository/Web/checkbox.resource
 Resource          ../Object_Repository/Web/icon.resource
