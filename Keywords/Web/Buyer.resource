@@ -164,7 +164,7 @@ Enter Buyer Email Id
     [Arguments]    ${username}
     Wait Until Element is Visible    //input[@id="Email Address"]    ${LONG_WAIT}    Sign In page is not visible after waiting for ${LONG_WAIT}
     SeleniumLibrary.Input Text    //input[@id="Email Address"]    ${username}
-    Wait Until Time    5
+    Wait Until Time    3
     Seleniumlibrary.Wait Until Element Is Visible    //button[text()="Get OTP"]
     Wait Until Element Clickable And Click    //button[text()="Get OTP"]    2
     Seleniumlibrary.Wait Until Element Is Visible    ${textbox.otp1.text}    ${SHORT_WAIT}    OTP Verifcation is not visible
